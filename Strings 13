@@ -5,7 +5,9 @@ int main(void){
   char pal[50];
   printf("Ingrese una palabra\n");
   scanf("%s",pal);
-  printf("La palabra tiene: %d caracteres", strlen(pal));
-  
+  char cont = 0;
+  for(int a = 1; a;)
+    a=pal [cont++];
+  printf("Tiene %d letras", --cont);
   return 0;
-}
+  }
