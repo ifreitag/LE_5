@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+  char pal[15];
+  int voc = 0;  
+  int f=0;
+  int a=0,e=0,i=0,o=0,u=0;
+  printf("Ingrese una palabra: ");
+  scanf("%s",&pal);
+  
+  for(f=0;f<=15; f++){
+    if(pal[f]=='a'){
+      a++;
+    }
+    if(pal[f]=='e'){
+      e++;
+    }
+    if(pal[f]=='i'){
+      i++;
+    }
+    if(pal[f]=='o'){
+      o++;
+    }
+    if(pal[f]=='u'){
+      u++;
+    }
+  }
+  printf("La palabra '%s' tiene:\nA: %d\nE: %d\nI: %d\nO: %d\nU: %d", pal,a,e,i,o,u);
+  return 0;
+}
