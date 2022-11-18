@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+  int medir,vect[10];
+  printf("Ingrese 10 valores entre 0 y 50\n");
+  for (int u=0;u<10;0){
+    scanf("%d",&medir);
+    if (medir>-1 && medir<51){
+      vect[u]=medir;
+      u++;
+    }else{
+      printf("Ingrese un valor valido\n");
+    }
+  }
+  printf("Ingrese la posicion a desplazar: ");
+  scanf("%d",&medir);
+  for (int u=medir;u<9;u++){
+    vect[u]=vect[u+1];
+  }
+  vect[9]=0;
+  for (int t=0;t<10;t++) printf("%d ",vect[t]);
+  return 0;
+}
