@@ -6,7 +6,7 @@ int main(void){
   printf("Ingrese una palabra\n");
   scanf("%s",pal);
   char cont = 0;
-  for(int a = 1; a;)
+  for(char a = 1; a;)
     a=pal [cont++];
   printf("Tiene %d letras", --cont);
   return 0;
