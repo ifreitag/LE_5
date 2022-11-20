@@ -1,13 +1,18 @@
 #include <stdio.h>
 #include <string.h>
-
-int main(void){
+int main(void) {
   char pal[50];
-  printf("Ingrese una palabra\n");
-  scanf("%s",pal);
-  char cont = 0;
-  for(char a = 1; a;)
-    a=pal [cont++];
-  printf("Tiene %d letras", --cont);
-  return 0;
+  char let;
+  printf("Ingrese una palabra: ");
+  scanf("%s",&pal);
+  for (int t=0; t<50; t++){
+    if (pal[t] == '\0'){
+      let = t;
+      t=50;
+
+    }
+
   }
+  printf("tiene %d caracteres",let);
+  return 0;
+}
